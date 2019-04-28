@@ -1,33 +1,34 @@
 let colors = ['red', 'blue', 'white', 'yellow', 'blue', 'white'];
 console.log(colors);
 
-//Filter array
-// let filteredArray = colors.filter(elements => {
-//     return elements.length>4;
-// })
-// console.log(filteredArray);
+/* //Filter array
+let filteredArray = colors.filter(elements => {
+    return elements.length>4;
+})
+console.log(filteredArray); */
 
-// Filter array
-// let filteredArray = colors.filter((elements,index,) => {
-//     console.log(index);
-//     return elements.length>4 && elements.length<6;
-// })
-// console.log(filteredArray);
+/* // Filter array
+let filteredArray = colors.filter((elements,index,) => {
+    console.log(index);
+    return elements.length>4 && elements.length<6;
+})
+console.log(filteredArray);
+console.log(colors); */
 
 
 // --------------------------------------------------------------------------------------
-//Remove duplicates
-// let uniqueArray = colors.filter((element,index,arr)=> {
-//     console.log(arr.indexOf(element));
-//     return arr.indexOf(element) === index;
-// })
-// console.log(uniqueArray,"uniqueArray");
+/* //Remove duplicates
+let uniqueArray = colors.filter((element,index,arr)=> {
+    console.log(arr.indexOf(element));
+    return arr.indexOf(element) === index;
+})
+console.log(uniqueArray,"uniqueArray"); */
 
 // ---------------------------------------------------
 
-// Remove duplicates using Spread
-// let uniqueArray = [...new Set(colors)];
-// console.log(uniqueArray,"uniqueArray");
+/* // Remove duplicates using Spread
+let uniqueArray = [...new Set(colors)];
+console.log(uniqueArray,"uniqueArray"); */
 
 // ---------------------------------------------------
 
