@@ -1,6 +1,8 @@
 let colors = ['red', 'blue', 'white', 'yellow', 'blue', 'white'];
 console.log(colors);
 
+// --------------------filter---------------------------------------------------------
+
 /* //Filter array
 let filteredArray = colors.filter(elements => {
     return elements.length>4;
@@ -16,7 +18,7 @@ console.log(filteredArray);
 console.log(colors); */
 
 
-// --------------------------------------------------------------------------------------
+// -----------Remove duplicates-------filter-----------------------------------------------------
 /* //Remove duplicates
 let uniqueArray = colors.filter((element,index,arr)=> {
     console.log(arr.indexOf(element));
@@ -24,13 +26,13 @@ let uniqueArray = colors.filter((element,index,arr)=> {
 })
 console.log(uniqueArray,"uniqueArray"); */
 
-// ---------------------------------------------------
+// --------Remove duplicates--------Spread-------------------------
 
 /* // Remove duplicates using Spread
 let uniqueArray = [...new Set(colors)];
 console.log(uniqueArray,"uniqueArray"); */
 
-// ---------------------------------------------------
+// ------------Remove duplicates------------Set--------------------
 
 // Remove duplicates using Set
 // function uniqBy(a, key) {
@@ -45,7 +47,7 @@ console.log(uniqueArray,"uniqueArray"); */
 // b = uniqBy(a, JSON.stringify)
 // console.log(b);
 
-// ---------------------------------------------------
+// -----------Remove duplicates-------------map-------------------
 
 // Remove duplicates using map
 // function uniqBy(colors, key) {
@@ -77,6 +79,33 @@ console.log(uniqueArray,"uniqueArray"); */
 // b = uniq_fast(a)
 // console.log(b);
 
+// ----------------for-------------------------------
 
+// colors.forEach(elements => {
+//     console.log(elements);
+// })
 
+// for(let e of colors){
+//     console.log(e);
+// }
 
+// for(let e in colors){
+//     console.log(e) // print index no
+//     console.log(colors[e]);
+// }
+
+// ------------------sort----------------------------
+
+// let sortedColors = colors.sort();
+// console.log(sortedColors,"sortedColors");
+// console.log(colors,"colors");   // the sort is applied on the initial array
+
+// -------------------every-----------------------------
+
+// let res = colors.every(hasA);
+// function hasA(e){
+//     return e.length > 2;
+// }
+// console.log(res)
+
+// ------------------------------------------------------

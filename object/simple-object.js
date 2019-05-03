@@ -36,7 +36,22 @@ let simpleObjArr = [
     },
 ]
 
-// ---------------------------------------------------------------------------------
+// ---------------------map-------------------------------------------
+
+// var newArray = simpleObjArr.map((obj)=>{
+//     // return obj.salary + 1000;
+//     // return obj.name + 'dddd'
+//     let o = {
+//         id: obj.id+10,
+//         name: obj.name+'AAAAA',
+//         town:obj.town+'TTTTTTTT',
+//         salary: obj.salary+1000
+//     }
+//     return o;
+// })
+// console.log(newArray);
+
+// ---------------------filter-------------------------------------------
 
 // var newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
 
@@ -52,7 +67,7 @@ let simpleObjArr = [
 // })
 // console.log(filteredObjArr);
 
-// ---------------------------------------------------------------------------------
+// ---------------------reduce-----------------------------------------------
 
 // array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
 
@@ -60,6 +75,7 @@ let simpleObjArr = [
 //     return acc+ Math.round(currentValue.salary);
 // },0)
 // console.log(totalSalary,"totalSalary");
+
 
 // ------------------------------------------------------------------------------------
 
@@ -91,5 +107,15 @@ let simpleObjArr = [
 // console.log(uniqByKeepFirst(data, it => it.u))
 // console.log(uniqByKeepLast(data, it => it.u))
 
+// ----------------------------------
+
+//sort object array
+// simpleObjArr.sort((a,b)=> {
+//     return (a.salary > b.salary)
+// })
+
+// console.log(simpleObjArr)
+
+// ----------------------------------
 
 
