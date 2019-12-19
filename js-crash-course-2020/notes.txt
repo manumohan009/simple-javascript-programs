@@ -1,0 +1,111 @@
+
+JavaScript Tutorial for Beginners - Crash Course 2020
+https://www.youtube.com/watch?v=2qDywOS7VAc
+
+What is JS?
+    JS is a dynamic interpreted programming language. It is weakly typed
+
+How is JS code executed?
+    JS engine (built into browser), V8 in chrome, SpiderMonkey in Firefox
+    The job of engine is to parse code, compile into machine code, executes the code
+    All happens on a single thread
+
+Dynamic? Weakly typed?
+    Not pre-compiled, instead parsed, interpreted and compiled on the fly (eg in browser).
+    Code evaluated and executed ar runtime
+    Code can change at runtime (eg. type of a variable)
+
+    Weakly typed means, we need not define the datatype
+    If not defined js assumes the datatype
+
+JS runs on a host environment
+    JS engine can be part of different environment (eg browser, server-side)
+
+    Browser
+    JS was invented to create more dynamic websites by executing in browser
+    JS can manipulate HTML code, CSS, send background http requests & much more
+    JS can't access local file system for security reasons, can't interact with the OS
+
+    Server-side
+    Google's JS engine (V8) was extracted to run JS anywhere (called Node.js)
+    Node.js can be executed on any machine and is therefore often used to build web backends (server side JS)
+    Node.js can access the local file system, interact with OS etc. It can't manipulate HTML or CSS
+
+What is in this course?
+    Core basics
+        Getting started, Language basics, base syntax, efficient development & debugging, control structures,
+        Behind the scenes of JS,
+        A closer look at functions,
+        DOM basics,
+        Arrays and Iterables,
+        Objects,
+    Building a strong foundation
+        Classes & OOP,
+        Constructor functions & Prototypes
+        More about DOM and Browser
+        APIs
+        Events
+        Functions deep dive
+        More about numbers and strings
+        Asynchronous code
+        Background Http (Ajax)
+    Advanced concepts
+        3rd party libraries
+        JS modules
+        Tooling (webpack, babel)
+        Working with browser storage
+        Browser support
+        JS frameworks
+        Meta programming
+        NodeJS introduction
+        Security
+        Deployment
+        Performance optimizations & memory leaks
+
+Javascript & ECMAScript
+    ECMAScript
+        A standards organization that evolves the ECMAScript language
+        ECMAScript is implemented by browser vendors; JS is the most famous ECMAScript implementation (others would be ActionScript or Jscript)
+        ECMAScript isn't directly used but browser vendors (Google with chrome, Mozilla with Firefox etc) implement the standard into their JS engines
+        Each browser comes with its own JS engine that also defines which features are actully supported 
+
+Datatypes
+    Numbers
+    Strings
+    Booleans - true/false
+    Objects - grouping data {name:'Max'}
+    Arrays - list of data - [1,3,5]
+    undefined - uninitialized variables; never assign a undefined value
+    null - means no value
+    NaN - Not a Number
+
+
+Functions
+    'Code on demand'
+    order doesn't matter. 
+
+To convert a string to numbers
+    parseInt(userInput.value)
+    parseFloat(userInput.value)
+    +userInput.value
+
+To convert a number to string
+    someNumber.toString()
+
+++ & --
+    value++  returns the value before increment
+    ++value  returns the value after increment
+
+Arrays
+    arr.push(item)
+
+typeof
+    gives the type of a value
+    array, null is of type object
+    NaN is of type Number
+
+defer and async in <script> tag
+    defer - downloads the .js file immediately but waits till the html is parsed; guarantees the order of execution
+    async - downloads the .js file as soon as possible and starts execution immediately; used if the .js file doesn't rely on html content
+
+    
