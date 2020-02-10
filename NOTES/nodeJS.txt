@@ -1,0 +1,11 @@
+What is Node.js
+    A JavaScript runtime
+    JavaScript on the server
+    uses v8 engine
+
+Express
+
+Middleware
+    A incoming request is automatically funneled through a bunch of functions by expressjs
+    Instead of having one request handler, there is a possiblity of hooking in multiple functions which request will go through until you send the response
+    This allows you to split up code into multiple pieces 

@@ -1,0 +1,36 @@
+COOKIES
+
+Setting Cookie
+    res.setHeader('Set-Cookie', 'loggedIn=true')
+    Once a cookie is set it is send to server on every requests
+Manipulating Cookie
+    It is possible to edit the value in cookie using the developer tools
+    Sensitive information should not be stored in cookie
+Configuring Cookie
+    Cookie is a popular instrument for tracking users
+    res.setHeader('Set-Cookie', 'loggedIn=true; Expires=')
+        Expires
+        Max-Age=10
+        Domain
+        Secure
+        HttpOnly
+What is a Session?
+    Instead of storing the information that the user is authenticated in the front end, we can store it in the backend using Session
+Initializing the Session Middleware
+    npm i express-session
+    app.use(session({secret: 'my secret, resave: false, saveUninitialized: false}))
+Using the Session Middleware
+    req.session.isLoggedIn = true;
+    this will add a session cookie to the browser; which will identify you to the server
+Using MongoDB to stroe Sessions
+    npm i connect-mongodb-session
+    const session = require('express-session')
+    const MongoDBStore = require('connect-mongodb-session')(session)
+    const store = new MongoDBStore({uri: '', collection: 'sessions', });
+    app.use(session({secret: 'my secret, resave: false, saveUninitialized: false, store: store}))
+Session & Cookies - A Short Summary
+Deleting a Cookie
+
+
+
+

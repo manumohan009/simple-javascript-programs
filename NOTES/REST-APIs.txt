@@ -1,0 +1,56 @@
+REST APIs - Decoupling Frontend and Backend
+
+What are REST APIs and why do we use them
+    Representational State Transfer
+        Transfer data instead of UI
+    Not every Frontend (UI) requires HTML Pages!
+    Mobile Apps
+    Single Page Applications
+    Service APIs
+Accessing Data with REST APIs
+    Data Formats
+        HTML, Plain Text, XML, JSON
+Understanding Routing & HTTP Methods
+    API Endpoints - paths and HTTP Methods
+    Http Methods
+        GET- Get a resource from the server 
+        POST- Post a resource to the server(ie, create or append resource)
+        PUT - Put a resource onto the server(ie, create or overwrite a resource)
+        PATCH- Update parts of an existing resource on the server
+        DELETE- Delete a resource on the server
+        OPTIONS- Determine whether follow-up Request is allowed (sent automatically)
+REST APIs - The Core principles
+    Uniform Interface
+        Clearly defined API Endpoints with clearly defined request + response data structure
+    Stateless interactions
+        Server and client don't store any connection history, every request is handled separately
+    Cacheable
+        Serve may set caching headers to allow the client to cache responses
+    Client-Server
+        Server and Client are separated, client is not concerned with persistent data storage
+    Layered System
+        Server may forward request to other APIs
+    Code on Demand
+        Executable code may be transfered from sever to client
+Creating our REST API Project & Implementing the Route Setup
+    npm i express
+REST APIs, Client & CORS Errors
+    CORS - Cross-Origin-Resource-Sharing
+        By default this is not allowed by browsers; This is a security mechanism in browsers that restrict sharing of resources across domains
+        If client and server is on same domain, we have no issues. But if they are in different domain we will have CORS issues
+        In a REST API, we want to share data to all clients
+        We need to tell the client that it may accept the response send by our server. To tell this to the browser we need to do something on the server
+        app.use((req, res, next)=>{
+            res.setHeader('Access-Control-Allow-Origin', '*')
+            res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, 'DELETE');
+            res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorizaton')
+            next();
+        })
+Sending POST requests
+
+
+
+
+
+
+
