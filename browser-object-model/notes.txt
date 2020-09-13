@@ -1,0 +1,7 @@
+Browser Object Model is used to interact with the Browser
+window
+    document
+    screen
+    navigator
+    history
+    location
