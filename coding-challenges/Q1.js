@@ -1,5 +1,4 @@
 // Program to find the no of occurrences of a character in a string
-
 let str = 'manumohanan'
 let arr = []
 
